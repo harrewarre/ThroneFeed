@@ -6,7 +6,7 @@ Vlambeer's [Nuclear Throne](http://nuclearthrone.com/) exposes it's realtime dat
 
 This webapp uses that live data to generate an overlay that you can display on your OBS stream while playing Nuclear Throne on Twitch (or other service).
 
-The live version of this app is running here: [Thronefeed](thronefeed.azurewebsites.net)
+The live version of this app is running here: [Thronefeed](http://thronefeed.azurewebsites.net)
 
 ## Requirements
 
