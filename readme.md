@@ -17,5 +17,5 @@ Visual Studio in IIS Express.
 
 For the overlay you need
 
-1. Nuclear Throne
+1. Nuclear Throne **UPDATE 98** or higher.
 2. OBS with the CLR Browsersource plugin (or other streaming software that supports web content)
