@@ -12,8 +12,10 @@ The live version of this app is running here: [Thronefeed](thronefeed.azurewebsi
 
 This is an ASP.NET web app, you can host this in IIS, on Azure or just run it locally from
 Visual Studio in IIS Express.
+
 1. .NET 4.5.2
 
 For the overlay you need
+
 1. Nuclear Throne
 2. OBS with the CLR Browsersource plugin (or other streaming software that supports web content)
