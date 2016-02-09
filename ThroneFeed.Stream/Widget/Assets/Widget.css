@@ -1,0 +1,21 @@
+﻿html,
+body {
+    background-color: transparent;
+    font-family: 'press_start_2pregular';
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 36px;
+}
+
+.line {
+    margin: 5px 0;
+}
+
+.line > img {
+    margin: 0 0 5px 0;
+}
+
+.kill-icon {
+    height: 38px;
+}

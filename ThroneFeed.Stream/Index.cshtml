@@ -1,0 +1,109 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Thronefeed - realtime run stats overlay</title>
+    <link href="~/Assets/pressstart2p.css" rel="stylesheet" />
+    <link href="~/Assets/Styles.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+        <h1>
+            <img class="icon" src="~/Assets/Stuff/ultra.png" />Thronefeed
+        </h1>
+        <small>Realtime data from your current Nuclear throne run!</small>
+    </header>
+
+    <div class="page-block quickstart">
+        <div class="page-block-content">
+            <h2>Quickstart</h2>
+            <p>
+                1. Install the browsersource plugin for OBS. (the overlay should work with any other streaming program that supports web content)
+            </p>
+            <p>
+                2. Generate a widget using the inputs below.<br />
+            </p>
+            <p>
+                3. Use the resulting widget's URL in the OBS plugin and display it on your stream.
+            </p>
+        </div>
+    </div>
+
+    <div class="page-block">
+        <div class="generator">
+            <div>
+                <label>Steam community name</label>
+                <input type="text" id="steamComId" />
+            </div>
+            <div>
+                <label>Streamkey</label>
+                <input type="text" id="streamKey" />
+            </div>
+            <div>
+                <button id="widgetGen">Generate widget</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-block help">
+        <div class="page-block-content">
+            <h2>Help</h2>
+            <p>
+                Steam community name? You can find this one in the Steam client by looking at the top menu, it should be right there.
+                <img src="~/Assets/help/commId.png" />
+            </p>
+
+            <p>
+                Streamkey? This one needs to be enabled in Nuclear Throne. Start the game and go to Settings > Game > Streamkey. Click on it to enable/disable it. The random number appearing is your streamkey.
+                <img src="~/Assets/help/streamkey.png" />
+                More info about the streamkey can be found here: <a href="http://nuclearthrone.com/streamkey">http://nuclearthrone.com/streamkey</a>
+            </p>
+
+            <p>
+                Setting up OBS? You can use the old OBS or the new OBS Multiplatform version. Before you can use the overlay you will need to install the Browsersource plugin.<br />
+                Old OBS plugin <a href="https://obsproject.com/forum/resources/clr-browser-source-plugin.22/">here</a> and for the new multiplatform version <a href="https://obsproject.com/forum/resources/browser-plugin.115/">here</a>.<br />
+                Detailed instruction on installation also found at their respective links above.
+            </p>
+
+            <p>
+                Displaying the overlay in OBS? If you have the OBS browsersource plugin installed and verified that it works, you can generate yourself a widget on this page with the inputs above. Once you have the widget you can add it to
+                OBS. 
+                <img src="~/Assets/help/obs.png" />
+                <img src="~/Assets/help/feed.png" />
+                The widget will refresh itself every 15 seconds (that's as fast as it can update its data).
+            </p>
+
+            <p>
+                My widget won't appear when I click 'Generate'? Your browser might block pop-ups, check for warnings about blocked pop-ups.
+            </p>
+        </div>
+    </div>
+
+    <div class="page-block about">
+        <div class="page-block-content">
+            <h2>About and disclaimer</h2>
+            <p>
+                Who am I? I'm a software developer who likes to play videogames :-) You can reach me on twitter if you have any questions or want to have a chat: <a href="http://twitter.com/harrewarre">http://twitter.com/harrewarre</a>
+            </p>
+            <p>
+                The server can see your steamid and streamkey but they are not stored or used for anything other than loading data from <a href="http://www.thronebutt.com">Thronebutt</a>.
+            </p>
+            <p>
+                This site is not made or maintained by vlambeer.
+            </p>
+        </div>
+    </div>
+
+    <div class="page-block centered">
+        <img src="~/Assets/Stuff/Campfire2.gif" />
+    </div>
+
+    <script src="~/App/WidgetGen.js"></script>
+</body>
+</html>

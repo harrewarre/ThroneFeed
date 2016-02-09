@@ -1,0 +1,73 @@
+﻿@{
+    Layout = null;
+
+    var steamId = Request.QueryString.Get("steamid");
+    var streamKey = Request.QueryString.Get("key");
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <title>ThroneButt streamdata widget</title>
+
+    <link href="~/Assets/pressstart2p.css" rel="stylesheet" />
+    <link href="~/Widget/Assets/Widget.css" rel="stylesheet" />
+
+    <script src="~/Scripts/knockout-3.4.0.js"></script>
+
+    <script src="~/Widget/App/StreamDataMapper.js"></script>
+    <script src="~/Widget/App/Widget.js"></script>
+</head>
+<body>
+    <div id="widget">
+        <div data-bind="with: StreamData">
+            <div data-bind="with: current">
+                <div class="line">
+                    world <span data-bind="text: world"></span>-<span data-bind="text: level"></span>
+                </div>
+                <div class="line">
+                    loop <span data-bind="text: loops"></span>
+                </div>
+                <div class="line">
+                    <img class="kill-icon" src="~/Assets/dead.png" /> <span data-bind="text: kills"></span>
+                </div>
+            </div>
+
+            <div data-bind="with: previous">
+                <!-- ko if: !$parent.current && $parent.previous-->
+                <div>
+                    Previous run
+                </div>
+                <div class="line">
+                    <img data-bind="attr: { src: $root.DataMapper.GetCharacterImage(char) }" />
+                </div>
+                <div class="line">
+                    world <span data-bind="text: world"></span>-<span data-bind="text: level"></span>
+                </div>
+                <div class="line">
+                    loop <span data-bind="text: loops"></span>
+                </div>
+                <div class="line">
+                    level <span data-bind="text: charlvl"></span>
+                </div>
+                <div class="line">
+                    <img class="kill-icon" src="~/Assets/dead.png" /> <span data-bind="text: kills"></span>
+                </div>
+                <!-- /ko -->
+            </div>
+
+            <div data-bind="if: !current && !previous">
+                No data available!<br />Start playing!
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        ko.applyBindings(new ThroneButt.Widget("@steamId", "@streamKey"), document.getElementById("widget"));
+    </script>
+</body>
+</html>
