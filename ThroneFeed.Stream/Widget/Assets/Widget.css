@@ -12,10 +12,33 @@ body {
     margin: 5px 0;
 }
 
-.line > img {
-    margin: 0 0 5px 0;
-}
+    .line > img {
+        margin: 0 0 5px 0;
+    }
 
 .kill-icon {
     height: 38px;
+}
+
+.daily {
+    color: red;
+}
+
+.weekly {
+    color: #0094ff;
+}
+
+.ultra {
+    color: #4cff00;
+    animation: glow 3s linear 0s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        color: #b6ff00;
+    }
+
+    100% {
+        color: #00ff21;
+    }
 }

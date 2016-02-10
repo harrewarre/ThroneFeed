@@ -34,6 +34,12 @@
                 <div class="line">
                     <img class="kill-icon" src="~/Assets/dead.png" /> <span data-bind="text: kills"></span>
                 </div>
+                <div class="line daily" data-bind="visible: type == 'daily'">
+                    daily
+                </div>
+                <div class="line weekly" data-bind="visible: type == 'weekly'">
+                    weekly
+                </div>
             </div>
 
             <div data-bind="with: previous">
@@ -51,10 +57,16 @@
                     loop <span data-bind="text: loops"></span>
                 </div>
                 <div class="line">
-                    level <span data-bind="text: charlvl"></span>
+                    level <span data-bind="visible: charlvl <= 9,text: charlvl"></span><span class="ultra" data-bind="visible: charlvl > 9">Ultra</span>
                 </div>
                 <div class="line">
                     <img class="kill-icon" src="~/Assets/dead.png" /> <span data-bind="text: kills"></span>
+                </div>
+                <div class="line daily" data-bind="visible: type == 'daily'">
+                    daily
+                </div>
+                <div class="line weekly" data-bind="visible: type == 'weekly'">
+                    weekly
                 </div>
                 <!-- /ko -->
             </div>
