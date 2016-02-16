@@ -4,7 +4,8 @@ body {
     font-family: 'press_start_2pregular';
     text-transform: uppercase;
     color: #fff;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 3px 3px 0 #000, 3px 0 0 #000;
+    line-height: 120%;
     font-size: 36px;
 }
 
