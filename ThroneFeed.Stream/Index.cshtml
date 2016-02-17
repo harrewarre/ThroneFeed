@@ -48,7 +48,7 @@
                 <input type="text" id="streamKey" data-bind="value: StreamKey" />
             </div>
             <div>
-                <button id="widgetGen">Generate widget</button>
+                <button id="widgetGen" data-bind="click: Generate">Generate widget</button>
             </div>
         </div>
         <div class="page-block-content">
@@ -120,6 +120,7 @@
         <img src="~/Assets/Stuff/Campfire2.gif" />
     </div>
 
+    <script src="~/App/Util.js"></script>
     <script src="~/App/WidgetGen.js"></script>
 
     <script>

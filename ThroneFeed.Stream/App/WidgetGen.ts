@@ -1,17 +1,21 @@
-﻿module ThroneFeed {
+﻿/// <reference path="util.ts" />
+
+module ThroneFeed {
     export class WidgetGenerator {
-        DoWork = <HTMLButtonElement>document.getElementById("widgetGen");
-
-        constructor() {
-            this.DoWork.onclick = this.Generate;
-        }
-
         SteamId = ko.observable<string>();
         StreamKey = ko.observable<string>();
 
+        Notifier = new Util.NotificationPopup();
+
         Generate = () => {
-            if (!this.SteamId() || !this.StreamKey()) {
-                alert("Whoops! You forgot to complete one of the field!");
+
+            if (!this.SteamId()) {
+                this.Notifier.Show("You forgot your Steam ID!", Util.NotificationType.Error);
+                return;
+            }
+
+            if (!this.StreamKey()) {
+                this.Notifier.Show("You forgot your Stream key!", Util.NotificationType.Error);
                 return;
             }
 
