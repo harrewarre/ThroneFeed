@@ -129,6 +129,7 @@
     <Content Include="Assets\help\feed.png" />
     <Content Include="Assets\help\obs.png" />
     <Content Include="Assets\help\streamkey.png" />
+    <Content Include="Assets\Stuff\Ally_idle.gif" />
     <Content Include="Assets\Stuff\Campfire2.gif" />
     <Content Include="Assets\Stuff\Computer.gif" />
     <Content Include="Assets\Stuff\LargeMedkit.png" />

@@ -21,6 +21,7 @@ body {
 li {
     list-style-position: inside;
     list-style-type: square;
+    margin: 5px 0;
 }
 
 a {
@@ -83,6 +84,11 @@ header {
 
 .page-block.about {
     background: url(Stuff/PresentChest.png) left top no-repeat;
+}
+
+.page-block.friends {
+    background: url(Stuff/Ally_idle.gif) left top no-repeat;
+    background-size: 75px 75px;
 }
 
 .generator {
