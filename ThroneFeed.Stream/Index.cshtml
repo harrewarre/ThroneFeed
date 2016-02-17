@@ -10,6 +10,8 @@
     <title>Thronefeed - realtime run stats overlay</title>
     <link href="~/Assets/pressstart2p.css" rel="stylesheet" />
     <link href="~/Assets/Styles.css" rel="stylesheet" />
+
+    <script src="~/Scripts/knockout-3.4.0.js"></script>
 </head>
 <body>
 
@@ -36,14 +38,14 @@
     </div>
 
     <div class="page-block">
-        <div class="generator">
+        <div id="widgetGenerator" class="generator">
             <div>
-                <label>Steam community name</label>
-                <input type="text" id="steamComId" />
+                <label>64-bit SteamID</label>
+                <input type="text" id="steamId" data-bind="value: SteamId" />
             </div>
             <div>
                 <label>Streamkey</label>
-                <input type="text" id="streamKey" />
+                <input type="text" id="streamKey" data-bind="value: StreamKey" />
             </div>
             <div>
                 <button id="widgetGen">Generate widget</button>
@@ -60,8 +62,7 @@
         <div class="page-block-content">
             <h2>Help</h2>
             <p>
-                Steam community name? You can find this one in the Steam client by looking at the top menu, it should be right there.
-                <img src="~/Assets/help/commId.png" />
+                64-bit SteamId? Use this website to find it: <a href="https://steamid.io/">steamid.io</a>
             </p>
 
             <p>
@@ -80,7 +81,6 @@
                 Displaying the overlay in OBS? If you have the OBS browsersource plugin installed and verified that it works, you can generate yourself a widget on this page with the inputs above. Once you have the widget you can add it to
                 OBS.
                 <img src="~/Assets/help/obs.png" />
-                <img src="~/Assets/help/feed.png" />
                 The widget will refresh itself every 15 seconds (that's as fast as it can update its data).
             </p>
 
@@ -110,5 +110,10 @@
     </div>
 
     <script src="~/App/WidgetGen.js"></script>
+
+    <script>
+        var viewModel = new ThroneFeed.WidgetGenerator();
+        ko.applyBindings(viewModel, document.getElementById("widgetGenerator"));
+    </script>
 </body>
 </html>
