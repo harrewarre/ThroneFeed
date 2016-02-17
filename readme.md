@@ -8,6 +8,8 @@ This webapp uses that live data to generate an overlay that you can display on y
 
 The live version of this app is running here: [Thronefeed](http://thronefeed.azurewebsites.net)
 
+![ThroneFeed](http://www.thronefeed.net/Assets/help/art.png)
+
 ## Requirements
 
 This is an ASP.NET web app, you can host this in IIS, on Azure or just run it locally from
