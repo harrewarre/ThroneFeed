@@ -39,4 +39,3 @@ var ThroneFeed;
     ThroneFeed.WidgetGenerator = WidgetGenerator;
 })(ThroneFeed || (ThroneFeed = {}));
 new ThroneFeed.WidgetGenerator();
-//# sourceMappingURL=WidgetGen.js.map

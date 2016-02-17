@@ -11,9 +11,9 @@
                 }
                 case 2: {
                     characterFile = "crystal";
-                    break;
+                    break; 
                 }
-                case 3: {
+                case 3: { 
                     characterFile = "eyes";
                     break;
                 }
