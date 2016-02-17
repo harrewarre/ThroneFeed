@@ -20,7 +20,7 @@ body {
 
 li {
     list-style-position: inside;
-    list-style-type: square;
+    list-style-type: none;
     margin: 5px 0;
 }
 
@@ -91,6 +91,15 @@ header {
     background-size: 75px 75px;
 }
 
+.page-block.friends a {
+    display: block;
+}
+
+.page-block.friends li {
+    display: block;
+    line-height: 150%;
+}
+
 .generator {
     width: 400px;
     margin: 0 auto;
@@ -104,6 +113,7 @@ header {
         text-align: center;
         display: block;
         font-size: 12px;
+        padding: 0 0 3px 0;
     }
 
     .generator input,
