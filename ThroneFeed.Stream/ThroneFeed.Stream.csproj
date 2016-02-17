@@ -124,6 +124,7 @@
     <Content Include="Assets\characters\skelly.png" />
     <Content Include="Assets\characters\steroids.png" />
     <Content Include="Assets\characters\yv.png" />
+    <Content Include="Assets\help\art.png" />
     <Content Include="Assets\help\commId.png" />
     <Content Include="Assets\help\feed.png" />
     <Content Include="Assets\help\obs.png" />

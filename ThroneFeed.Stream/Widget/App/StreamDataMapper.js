@@ -77,3 +77,4 @@ var ThroneButt;
     })();
     ThroneButt.StreamDataMapper = StreamDataMapper;
 })(ThroneButt || (ThroneButt = {}));
+//# sourceMappingURL=StreamDataMapper.js.map

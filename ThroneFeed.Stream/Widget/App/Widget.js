@@ -28,3 +28,4 @@ var ThroneButt;
     })();
     ThroneButt.Widget = Widget;
 })(ThroneButt || (ThroneButt = {}));
+//# sourceMappingURL=Widget.js.map
