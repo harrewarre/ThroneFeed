@@ -23,3 +23,4 @@ var ThroneFeed;
     })();
     ThroneFeed.WidgetGenerator = WidgetGenerator;
 })(ThroneFeed || (ThroneFeed = {}));
+//# sourceMappingURL=WidgetGen.js.map
