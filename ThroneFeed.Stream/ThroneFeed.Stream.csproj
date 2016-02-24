@@ -140,17 +140,10 @@
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
     <Content Include="Index.cshtml" />
-    <Content Include="Font\pressstart2p-webfont.eot" />
-    <Content Include="Font\pressstart2p-webfont.ttf" />
-    <Content Include="Font\pressstart2p-webfont.woff" />
-    <Content Include="Font\pressstart2p-webfont.woff2" />
     <Content Include="Widget\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\dead.png" />
-    <Content Include="Assets\pressstart2p.css" />
-    <Content Include="Font\pressstart2p-demo.html" />
-    <Content Include="Font\pressstart2p-webfont.svg" />
     <Content Include="Scripts\knockout-3.4.0.debug.js" />
     <Content Include="Scripts\knockout-3.4.0.js" />
     <Content Include="Widget\Assets\Widget.css" />
